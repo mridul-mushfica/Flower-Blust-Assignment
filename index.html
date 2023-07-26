@@ -4,9 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Brust</title>
-    <header></header>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://kit.fontawesome.com/18ecd43efc.js" crossorigin="anonymous"></script>
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+  <!-- navbar -->
+    <header class="container  w-3/4 mx-auto">
+        <navbar>
+            <div class="navbar text-white rounded-full bg-error m-12">
+                <div  class="navbar-start">
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop </a></li>
+                         
+                          <li><a>All fruit</a></li>
+                        </ul>
+                      </div>
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li><a>Parent</a></li>
+                      <li><a>Item 3</a></li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="flex justify-between ">
+                    <a class="btn btn-ghost navbar-center normal-case text-xl">Fruit-Brust</a>
+                    <div class="dropdown dropdown-end"> 
+                      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                      </label>
+                  </div>
+                  
+                   
+                  </div>
+                </div>
+                
+                <div class="navbar-end">
+                  <a class="btn rounded-full text-xs font-extralight">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </div>
+        </navbar>
+
+
+    </header>
+
+    <main>
+     <!-- slider -->
+      <section>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- footer -->
+    </main>
+
+
 </body>
 </html>
