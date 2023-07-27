@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://kit.fontawesome.com/18ecd43efc.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
      <script>
         tailwind.config = {
           theme: {
@@ -18,8 +21,13 @@
           }
         }
       </script>
+      <style>
+        .font-lato{
+          font-family: 'Lato', sans-serif;
+        }
+      </style>
 </head>
-<body>
+<body class="font-lato">
   <!-- navbar -->
     <header class="container w-3/4 mx-auto">
         <navbar>
@@ -173,7 +181,7 @@
       <div class="grid grid-cols-1 my-24 justify justify-between lg:grid-cols-2">
           <div class="mr-12">
              <h1 class="text-4xl font-bold">Deal Of The Day</h1>
-             <p class="max-w-90 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+             <p class="max-w-90 ">Hello! The best fruit shop in the town here. We grow fresh vegetables, fruits . Visit our shop and buy some great freshness</p>
           </div>
           <!-- counter -->
           <div class="font-bold flex justify-end">
@@ -446,7 +454,71 @@
 </section>
 
 
+<!-- why choose us -->
 
+        
+<section  class="justify-center my-16  mx-auto container w-3/4">
+
+  <div class="mb-8">
+    <h1 class="text-5xl text-center mb-9 font-bold">Why Choose Us</h1>
+    <p class="w-4/5 mb-16  mx auto text-center">We are the top shop in today"s market. this is 100% organic and fresh fruit's shop where you can find whatever you want.There are beautiful and freshly grown fruits like apple, oranges, watermelon ,pineapples and such and such...</p>
+  </div>
+  <div class="grid mb-12 gap-5 grid-cols-1 lg:grid-cols-3">
+    <div class=" p-8">
+      <div class="flex gap-1 mb-5 justify-start ">
+         <div ><i class="fa-regular fa-user  bg-base-300 p-3 rounded-full"></i></div>
+         <div class="">
+          <h1 class=" border-b-2 border-neutral-content font-bold">Dedicated Team</h1>
+          <p >Professional employees are there for  the most amazing and fresh fruits.</p>
+         </div>
+      </div>
+      <div class="flex gap-1 mb-5 justify-start ">
+         <div><i class="fa-regular fa-heart   bg-base-300 p-3 rounded-full"></i></div>
+         <div class="">
+          <h1 class=" border-b-2 border-neutral-content font-bold">Fresh is Best</h1>
+          <p >Our employees are there for growing fresh fruits.</p>
+         </div>
+      </div>
+      <div class="flex gap-1 mb-5 justify-start ">
+         <div><i class="fa-solid fa-gifts  bg-base-300 p-3 rounded-full"></i></div>
+         <div class="">
+          <h1 class="font-bold border-b-2 border-neutral-content">Gift Certificates</h1>
+          <p >We gift our yearly most buyer and best buyers.</p>
+         </div>
+      </div>
+    </div>
+    <div>
+      <img src="whychoose1.png" alt="">
+    </div>
+    <div class=" p-8">
+      <div class="flex gap-1 mb-5   ">
+         
+         <div class="text-end">
+          <h1 class=" border-b-2 border-neutral-content font-bold">Integrated Supplier</h1>
+          <p >We have a lot of supplier in various places in the country</p>
+         </div>
+         <div ><i class="fa-solid fa-carrot  bg-base-300 p-3 rounded-full"></i></div>
+      </div>
+      <div class="flex gap-1 mb-5 ">
+         
+         <div class="text-end">
+          <h1 class=" border-b-2 border-neutral-content font-bold">Sustainable Practice</h1>
+          <p >The fruits are the result of  a lot of practices for many many years....</p>
+         </div>
+         <div ><i class="fa-solid fa-ice-cream bg-base-300 p-3 rounded-full"></i></div>
+      </div>
+      <div class="flex gap-1 mb-5 ">
+       
+         <div class="text-end">
+          <h1 class="font-bold border-b-2 border-neutral-content">The Benefits Only</h1>
+          <p >Both of you and me will be benefitted by using and buying from this shop.</p>
+
+         </div>
+         <div ><i class="fa-regular fa-thumbs-up bg-base-300 p-3 rounded-full"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- footer -->
       <footer class="static">
@@ -488,10 +560,7 @@
     
     </main>
 
-    
-<!-- lorem89-------------------------------------------------------------------------------------------------->
-
-
+ 
  
 
 
